@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+body {
+  background-position: center center;
+  background-image: url("../assets/Landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+.landing-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vw;
+}
+.flex {
+  flex: 1;
+}
+.logo {
+  margin: 5% 10% 0 10%;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.landing-text {
+  margin: 35% 10% 10% 10%;
+  font-size: 3.5vw;
+  font-family: "Open Sans", sans-serif;
+}
+.flex-container-2 {
+    background:black;
+    background:rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.input-text {
+  text-align: center;
+  margin-top: 45%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw;
+}
+input {
+  width: 40%;
+  margin-top: 5%;
+  /* font-family: 'Open-sans', sans-serif; */
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: x-large;
+
+  font-family: "Open Sans", sans-serif;
+
+}
+.submit-btn{
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-right: 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+@media (max-width: 900px) {
+  .landing-container {
+    flex-direction: column;
+  }
+  .landing-text {
+    margin-top: 25%;
+    margin-bottom: 5%;
+    font-size: 5vw;
+  }
+  .input-text {
+    text-align: left;
+    margin: 10%;
+  }
+}
+
+@media (max-width: 430px) {
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .landing-text {
+    margin-top: 35%;
+    font-size: 8vw;
+    margin-bottom: 5%;
+  }
+}
