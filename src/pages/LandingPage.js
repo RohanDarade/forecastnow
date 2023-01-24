@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "../styles/LandingPage.css";
+import {Navigate, useNavigate} from "react-router-dom";
+
+
 
 const LandingPage = () => {
+
+  const navigate = useNavigate();
+
   const [city, setCity] = useState("");
 
   const handleKeyDown = (event) => {
@@ -10,15 +16,14 @@ const LandingPage = () => {
     if (event.key === "Enter") {
       event.preventDefault();
 
-      // 👇️ access input value from state
       console.log(city);
 
-      // 👇️ access input value from event object
-      // console.log(event.target.value)
-
       console.log("User pressed Enter ✅");
+     
     }
   };
+  const passingValue = city;
+
 
   return (
     <div className="landing-container">
@@ -32,18 +37,25 @@ const LandingPage = () => {
         <div className="input-text">
           Enter city name to check weather
           <form>
-          <button type="submit" className="submit-btn" onClick={handleKeyDown}>
-              Get weather
-            </button>
             <input
               type="text"
               id="city"
               name="city"
+              placeholder="Enter City..."
               value={city}
               onChange={(event) => setCity(event.target.value)}
               onKeyDown={handleKeyDown}
             />
-        
+            <button
+              type="submit"
+              className="submit-btn"
+              onClick={() => {return(
+                {handleKeyDown},
+                navigate("/Weather", {state:{name:{passingValue}}})
+              ) }}
+            >
+              Get weather
+            </button>
           </form>
         </div>
       </div>
