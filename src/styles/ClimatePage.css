@@ -1,0 +1,70 @@
+.climate-page-container {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  /* text-transform: uppercase; */
+}
+.flex {
+  flex: 1;
+}
+.logo {
+    margin: 5% 10% 0 10%;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+.primary-details {
+  margin: 55% 10%;
+  width: 100%;
+}
+.city-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vw;
+  margin: 0px;
+  padding: 0px;
+}
+.city-temp {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vw;
+  margin: 0px;
+  padding: 0px;
+}
+.city-weather{
+  font-family: "Open Sans", sans-serif;
+font-size: 3vw;
+font-weight: 300;
+}
+.flex-container-4 {
+  background: black;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.back-arrow{
+    margin: 5% 10%;
+}
+.weather-details{
+    font-family: "Open Sans", sans-serif;
+    margin: 0 10%;
+}
+.city-description{
+    font-size: 3vw;
+}
+.detailed-info{
+    margin-top: 5%;
+    margin-left: 5px;
+    font-weight: 200;
+}
+.detailed-value{
+    font-size: 2vw;
+}
+.break{
+    border: none;
+    border-top: 1.5px solid #ffffff;
+    width: 30vw;
+    margin-left: 0;
+}
